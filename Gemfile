@@ -14,7 +14,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass',github: 'thomas-mcdonald/bootstrap-sass'
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
-gem 'sdoc', '~> 0.4.0', group: :doc         
+group :doc do
+gem 'sdoc', require: false
+end	
